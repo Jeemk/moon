@@ -11,11 +11,15 @@
 <title>Moon</title>
 <script>
 //***********************************************<公用方法(提取到公用js文件中)>*******************************************************
-
+ 
 /**
  * reset all the field of form,call like $("#loginForm").reset();
  */
-$.fn.reset = function(){
+ $(document).ready(function(){ 
+  	$("form").validate({align:'right',errorMsg:{'required':'这个可以填,真的可以填...<br/>'}});
+	});
+ 
+ $.fn.reset = function(){
 	$(':input',this)  
 	 .not(':button, :submit, :reset, :hidden')  
 	 .val('')  
@@ -80,7 +84,7 @@ $(function(){
 			});
 		
 		});
-
+ 
 		$("#reset").click(function() {
 			$("#loginForm").reset();
 		});
@@ -104,7 +108,7 @@ $(function(){
 	width:100px;
 	display: inline-block;
 }
-
+ 
 .form-inline{
 	margin-top:20px;
 }
@@ -112,10 +116,10 @@ $(function(){
 	text-align: center;
 }
 </style>
-
+ 
 </head>
 <body style="background: url('${pageContext.request.contextPath}/css/images/login_bg.jpg')">
-
+ 
 <div class="modal hide fade" id="myModal">
   <div class="modal-header">
     <h3>登&nbsp;&nbsp;录</h3>
@@ -127,11 +131,13 @@ $(function(){
     
      <div class="form-inline">
      	<span>用户名：</span>
-     	<input type="text" name="user.userName" value="system_user"/>
+     	<!--<input type="text" name="user.userName" value="system_user"/>-->
+     	<input type="text" name="user.userName" validate="validate[minsize(6)]" placeholder="邮箱地址/用户名">
      </div>
      <div class="form-inline">
      	<span>密&nbsp;&nbsp;码：</span>
-     	<input  name="user.password" type="password" value="system_user"/>
+     	<!--<input  name="user.password" type="password" value="system_user"/>-->
+     	<input type="password" name="user.password" validate="validate[minsize(6)]" placeholder="请输入密码">
      </div> 
 </form>
 </div>
