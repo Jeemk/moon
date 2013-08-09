@@ -16,7 +16,7 @@
  * reset all the field of form,call like $("#loginForm").reset();
  */
  $(document).ready(function(){ 
-  	$("form").validate({align:'right',errorMsg:{'required':'这个可以填,真的可以填...<br/>'}});
+  	$("#LoginForm").validate({align:'right'});
 	});
  
  $.fn.reset = function(){
@@ -132,7 +132,7 @@ $(function(){
      <div class="form-inline">
      	<span>用户名：</span>
      	<!--<input type="text" name="user.userName" value="system_user"/>-->
-     	<input type="text" name="user.userName" validate="validate[minsize(6)]" placeholder="邮箱地址/用户名">
+     	<input type="text" name="user.userName" validate="validate[minsize(6)]" placeholder="邮箱地址/用户名" errMsg="111">
      </div>
      <div class="form-inline">
      	<span>密&nbsp;&nbsp;码：</span>
