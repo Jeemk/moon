@@ -40,6 +40,21 @@ public class Require extends TagSupport{
 				}else if("zt".equals(s)||"ztree".equals(s)){//zt==ztree
 					sb.append("<script type=\"text/javascript\" src=\""+contextPath+"plugin/ztree/jquery.ztree.all-3.5.js\"></script>\n");
 					sb.append(" <link rel=\"stylesheet\" href=\""+contextPath+"plugin/ztree/css/zTreeStyle.css\" type=\"text/css\" />\n");
+				}else if("ui".equals(s)){
+					sb.append("<script type=\"text/javascript\" src=\""+contextPath+"plugin/jqueryui/jquery-ui-1.9.2.custom.js\"></script>\n");
+					sb.append(" <link rel=\"stylesheet\" href=\""+contextPath+"plugin/jqueryui/css/ext/jquery-ui-1.9.2.ext.min.css\" type=\"text/css\" />\n");
+				}else if("extend".equals(s)){
+					sb.append("<script type=\"text/javascript\" src=\""+contextPath+"js/jquery.extend.js\"></script>\n");
+				}else if("flex".equals(s)){
+					sb.append("<script type=\"text/javascript\" src=\""+contextPath+"plugin/jqueryui/flexigrid/flexigrid.js\"></script>\n");
+					sb.append(" <link rel=\"stylesheet\" href=\""+contextPath+"plugin/jqueryui/flexigrid/css/flexigrid.css\" type=\"text/css\" />\n");
+				}else if("ze".equals(s)){
+					sb.append("<script type=\"text/javascript\" src=\""+contextPath+"js/ztree.extend.js\"></script>\n");
+				}else if("fv".equals(s)){
+					sb.append("<script type=\"text/javascript\" src=\""+contextPath+"plugin/jqueryui/validate/jquery.formValidation-1.0.js\"></script>\n");
+					sb.append(" <link rel=\"stylesheet\" href=\""+contextPath+"plugin/jqueryui/validate/css/tip-darkgray.css\" type=\"text/css\" />\n");
+				}else if("icon".equals(s)){
+					sb.append(" <link rel=\"stylesheet\" href=\""+contextPath+"css/icon/icon.css\" type=\"text/css\" />\n");
 				}else{
 					sb.append("<script type=\"text/javascript\" src=\""+contextPath+s+"\"/>");
 				}
