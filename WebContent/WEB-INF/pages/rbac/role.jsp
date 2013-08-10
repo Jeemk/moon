@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/pages/rbac/role.js"></script>
+<m:require src="role"/>
 <title>角色管理</title>
  <style type="text/css">
 .label{

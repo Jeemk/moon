@@ -5,9 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <script type="text/javascript" src="${pageContext.request.contextPath}/jquery/ui/layout/jquery.layout-latest.js"></script>
- <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/jquery/ui/layout/layout-default-latest.css"/>
- <script type="text/javascript" src="${pageContext.request.contextPath}/js/pages/index.js"></script>
+<m:require src="layout,index"/>
 <title>主页</title>
 <script>
 //***********************************************<公用方法(提取到公用js文件中)>*******************************************************

@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
- <script type="text/javascript" src="${pageContext.request.contextPath}/js/pages/rbac/menu.js"></script>
+<m:require src="menu"/>
 <title>菜单</title>
  
 <style type="text/css">

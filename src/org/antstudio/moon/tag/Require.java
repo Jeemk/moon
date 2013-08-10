@@ -55,6 +55,17 @@ public class Require extends TagSupport{
 					sb.append(" <link rel=\"stylesheet\" href=\""+contextPath+"plugin/jqueryui/validate/css/tip-darkgray.css\" type=\"text/css\" />\n");
 				}else if("icon".equals(s)){
 					sb.append(" <link rel=\"stylesheet\" href=\""+contextPath+"css/icon/icon.css\" type=\"text/css\" />\n");
+				}else if("role".equals(s)){
+					sb.append("<script type=\"text/javascript\" src=\""+contextPath+"js/pages/rbac/role.js\"></script>\n");
+				}else if("layout".equals(s)){
+					sb.append("<script type=\"text/javascript\" src=\""+contextPath+"jquery/ui/layout/jquery.layout-latest.js\"></script>\n");
+					sb.append(" <link rel=\"stylesheet\" href=\""+contextPath+"jquery/ui/layout/layout-default-latest.css\" type=\"text/css\" />\n");
+				}else if("index".equals(s)){
+					sb.append("<script type=\"text/javascript\" src=\""+contextPath+"js/pages/index.js\"></script>\n");
+				}else if("menu".equals(s)){
+					sb.append("<script type=\"text/javascript\" src=\""+contextPath+"js/pages/rbac/menu.js\"></script>\n");
+				}else if("perm".equals(s)){
+					sb.append("<script type=\"text/javascript\" src=\""+contextPath+"js/pages/rbac/permission.js\"></script>\n");
 				}else{
 					sb.append("<script type=\"text/javascript\" src=\""+contextPath+s+"\"/>");
 				}
